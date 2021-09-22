@@ -1,0 +1,369 @@
+
+
+body{
+    margin: 0;
+}
+
+.container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    row-gap: 4%;
+    column-gap: 2%;
+    max-width: max-content;
+    background-color: aliceblue;
+    border: 2px solid red;
+    min-height: 400px;
+    margin: 14% auto 0 auto;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+}
+
+.card-user{
+    display: grid;
+    background-color: hsl(236, 44%, 20%);
+    grid-row: span 4;
+    justify-items: stretch;
+}
+
+.user-name{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.image-user{
+    display: inline-block;
+    height: 4.5rem;
+    border-radius: 50%;
+    border:  2px solid white;
+}
+
+.image{
+    display: inline-block;
+    height: 40px;
+}
+
+.cards{
+    min-height: max-content;
+    color: white;
+    border-radius: 15px;
+
+}
+
+.cards__items{
+    background: hsl(236, 44%, 20%);
+    position: relative;
+    top: 24%;
+    height: 76%;
+    border-radius: inherit;
+
+}
+
+.cards__modifiers{
+    /* display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0% 2%;
+    column-gap: 20px;
+    justify-content: space-around;
+ */
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0% 2%;
+    /* column-gap: 20px; */
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.image-card-ellipsis{
+    position: absolute;
+    top: 15%;
+    right: 8%;
+
+}
+
+.image-card-ellipsis:hover{
+    filter: brightness(200%);
+}
+
+.card__item__modifier-1{
+
+    /* margin: 0;
+    width: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    height: 34%; */
+
+    margin: 0;
+    width: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: flex-start;
+    height: 34%;
+
+}
+
+
+.card__item__modifier-1 span{
+    display: block;
+    
+}
+
+.card__item__modifier-2>span{
+    font-size: 2.2rem;
+}
+
+.card__item__modifier-2{
+    /* margin: 0;
+    width: 85%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 66%; */
+
+    margin: 0;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    height: 66%;
+    justify-content: center;
+    row-gap: 4%;
+    font-size: 1rem;
+    
+}
+
+.card__item--1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: inherit;
+}
+
+.card__item--2,
+.card__item--3,
+.card__item--4{
+    grid-row: span 2;
+}
+
+.card__item--5,
+.card__item--6,
+.card__item--7{
+    grid-row: span 2;
+}
+
+.card__item--2{
+    background: hsl(15, 100%, 70%) url("../images/icon-work.svg") 90% -5px no-repeat;
+    background-size: 65px;
+}
+
+.card__item--3{
+    background: hsl(195, 74%, 62%) url("../images/icon-play.svg") 89% -7px no-repeat;
+    background-size: 90px;
+}
+
+.card__item--4{
+    background: hsl(348, 100%, 68%) url("../images/icon-study.svg") 90% -9px no-repeat;
+    background-size: 95px;
+}
+
+.card__item--5{
+    background:  hsl(145, 58%, 55%) url("../images/icon-exercise.svg") 90% 0px  no-repeat;
+    background-size: 91px;
+}
+
+.card__item--6{
+    background:  hsl(264, 64%, 52%) url("../images/icon-social.svg") 90% -10px  no-repeat;
+    background-size: 76px;
+    
+}
+
+.card__item--7{
+    background:  hsl(43, 84%, 65%) url("../images/icon-self-care.svg") 90% -10px  no-repeat;
+    background-size: 74px;
+}
+
+.time-frame{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.1rem;
+    
+}
+
+
+@media screen and (max-width: 550px){
+    
+    .container{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        row-gap: 2%;
+        max-width: 100%;
+        margin: 0;
+        background-color: aliceblue;
+        border: 2px solid blue;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 100;
+        padding: 0 4%;
+
+    }
+
+    .image-user{
+        display: inline-block;
+        height: 4.5rem;
+        border-radius: 50%;
+        border:  2px solid white;
+    }
+    
+    .image{
+        display: inline-block;
+        height: 40px;
+    }
+    
+    .cards{
+        min-height: max-content;
+        color: white;
+        height: 26vh;
+        border-radius: 15px;
+    }
+    
+    .cards__items{
+        background: hsl(236, 44%, 20%);
+        position: relative;
+        top: 24%;
+        height: 76%;
+        border-radius: inherit;
+    
+    }
+    
+    .cards__modifiers{
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        /* padding: 0% 2%; */
+        row-gap: 8px;
+        justify-content: center;
+
+    }
+    
+    .image-card-ellipsis{
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        height: 6px;
+
+    }
+    
+    .image-card-ellipsis:hover{
+        filter: brightness(200%);
+    }
+    
+    .card__item__modifier-1{
+        margin: 0;
+        width: 88%;
+        display: flex;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .card__item__modifier-1 span{
+        display: block;
+    }
+    
+    .card__item__modifier-2{
+        margin: 0;
+        width: 88%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 25%;
+    
+    }
+    
+    .card__item--1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5%;
+        background-color: hsl(246, 80%, 60%);
+        border-radius: inherit;
+    }
+    
+    .card__item--2{
+        background: hsl(15, 100%, 70%) url("../images/icon-work.svg") 90% -5px no-repeat;
+        background-size: 65px;
+    }
+    
+    .card__item--3{
+        background: hsl(195, 74%, 62%) url("../images/icon-play.svg") 89% -7px no-repeat;
+        background-size: 90px;
+    }
+    
+    .card__item--4{
+        background: hsl(348, 100%, 68%) url("../images/icon-study.svg") 90% -9px no-repeat;
+        background-size: 95px;
+    }
+    
+    .card__item--5{
+        background:  hsl(145, 58%, 55%) url("../images/icon-exercise.svg") 90% 0px  no-repeat;
+        background-size: 91px;
+    }
+    
+    .card__item--6{
+        background:  hsl(264, 64%, 52%) url("../images/icon-social.svg") 90% -10px  no-repeat;
+        background-size: 76px;
+    
+    }
+    
+    .card__item--7{
+        background:  hsl(43, 84%, 65%) url("../images/icon-self-care.svg") 90% -10px  no-repeat;
+        background-size: 74px;
+    }
+    
+    .card-user{
+        display: grid;
+        background-color: hsl(236, 44%, 20%);
+    }
+    
+    .user-name{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    
+    .time-frame{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-size: 1.1rem;
+        
+    }
+    
+}
+
