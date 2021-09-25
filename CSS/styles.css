@@ -2,6 +2,7 @@
 
 body{
     margin: 0;
+    background-color: hsl(226, 43%, 10%)
 }
 
 .container{
@@ -12,10 +13,10 @@ body{
     row-gap: 4%;
     column-gap: 2%;
     max-width: max-content;
-    background-color: aliceblue;
-    border: 2px solid red;
+    /* background-color: aliceblue;
+    border: 2px solid red; */
     min-height: 400px;
-    margin: 14% auto 0 auto;
+    margin: 8% auto;
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
 }
@@ -55,7 +56,7 @@ body{
     background: hsl(236, 44%, 20%);
     position: relative;
     top: 24%;
-    height: 76%;
+    height: 77%;
     border-radius: inherit;
 
 }
@@ -83,7 +84,7 @@ body{
     position: absolute;
     top: 15%;
     right: 8%;
-
+    cursor: pointer;
 }
 
 .image-card-ellipsis:hover{
@@ -179,7 +180,7 @@ body{
 
 .card__item--4{
     background: hsl(348, 100%, 68%) url("../images/icon-study.svg") 90% -9px no-repeat;
-    background-size: 95px;
+    background-size: 80px;
 }
 
 .card__item--5{
@@ -195,7 +196,7 @@ body{
 
 .card__item--7{
     background:  hsl(43, 84%, 65%) url("../images/icon-self-care.svg") 90% -10px  no-repeat;
-    background-size: 74px;
+    background-size: 70px;
 }
 
 .time-frame{
@@ -210,7 +211,7 @@ body{
 }
 
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
     
     .container{
         box-sizing: border-box;
